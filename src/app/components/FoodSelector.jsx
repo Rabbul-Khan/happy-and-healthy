@@ -54,7 +54,7 @@ export default function FoodSelector() {
                   'w-full rounded-lg py-3 text-sm font-medium leading-5 text-black dark:text-white',
 
                   selected
-                    ? 'bg-lighter text-primary dark:text-primary outline-none'
+                    ? 'bg-lighter text-primary dark:text-black outline-none'
                     : 'text-black  hover:text-primary dark:hover:text-primary'
                 )
               }
