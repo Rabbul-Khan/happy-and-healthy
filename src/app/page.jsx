@@ -10,7 +10,7 @@ export default function Home() {
       <Header />
       <div className="flex">
         <NavBar />
-        <div className="grid grid-cols-1 lg:grid-cols-10 lg:w-[calc(100vw-4rem)] bg-slate-200">
+        <div className="grid grid-cols-1 lg:grid-cols-10 lg:w-[calc(100vw-4rem)] bg-slate-200 dark:bg-darkBlackSecondary">
           <FoodSelector />
           <Article />
           <Settings />

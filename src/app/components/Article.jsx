@@ -3,7 +3,7 @@ import { MdStarRate, MdStarOutline } from 'react-icons/md';
 
 const Article = () => {
   return (
-    <main className="col-span-1 px-3 m-3 bg-white rounded-lg lg:col-start-3 lg:col-end-9">
+    <main className="col-span-1 px-3 m-3 bg-white rounded-lg dark:bg-darkBlack lg:col-start-3 lg:col-end-9 dark:text-gray-200">
       <div className="flex flex-col">
         <div className="flex gap-5">
           <div className="hidden gap-5 pt-28 pl-5 min-w-[3rem] lg:flex lg:flex-col">
@@ -34,7 +34,7 @@ const Article = () => {
               className="mb-3 rounded-lg sm:max-w-sm sm:ml-5 sm:float-right"
             />
             <h1 className="pb-5 text-2xl font-bold sm:text-4xl ">
-              Fruits: Nature's Nutrient-Rich Treasures
+              The Natural and Colorful World of Fruits
             </h1>
             <h2 className="pb-3 text-lg font-bold sm:text-2xl">
               Fruit Diversity

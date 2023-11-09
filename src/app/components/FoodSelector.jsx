@@ -43,19 +43,19 @@ export default function FoodSelector() {
   });
 
   return (
-    <div className="flex-col items-center hidden col-span-2 gap-4 px-3 m-3 bg-white rounded-lg h-[40rem] lg:flex">
+    <div className="flex-col items-center hidden col-span-2 gap-4 px-3 m-3 bg-white rounded-lg h-[40rem] lg:flex dark:bg-darkBlack dark:text-gray-200">
       <Tab.Group>
-        <Tab.List className="flex w-full p-1 m-2 space-x-1 border rounded-xl bg-blue-white border-primary">
+        <Tab.List className="flex w-full p-1 m-3 space-x-1 border rounded-xl dark:bg-darkBlackSecondary border-primary dark:border-gray-200">
           {Object.keys(categories).map((category) => (
             <Tab
               key={category}
               className={({ selected }) =>
                 classNames(
-                  'w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-black',
+                  'w-full rounded-lg py-3 text-sm font-medium leading-5 text-black dark:text-white',
 
                   selected
-                    ? 'bg-lighter text-primary outline-none'
-                    : 'text-black  hover:text-primary'
+                    ? 'bg-lighter text-primary dark:text-primary outline-none'
+                    : 'text-black  hover:text-primary dark:hover:text-primary'
                 )
               }
             >
@@ -66,7 +66,7 @@ export default function FoodSelector() {
         <div className="relative flex items-center justify-center w-full ml-auto lg:ml-0">
           <input
             type="text"
-            className="hidden w-full p-3 text-sm placeholder-black rounded-lg outline-gray-300 outline outline-1 lg:block focus:outline-primary focus:outline-2"
+            className="hidden w-full p-3 text-sm placeholder-black rounded-lg outline-gray-300 outline outline-1 lg:block focus:outline-primary focus:outline-2 dark:bg-darkBlackSecondary dark:outline-lighter dark:placeholder-gray-200"
             placeholder="Search By Fruit Name"
           />
           <span className="mr-5 lg:mr-0 lg:absolute lg:right-2">

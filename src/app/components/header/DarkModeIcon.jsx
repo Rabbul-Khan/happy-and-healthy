@@ -1,11 +1,11 @@
 import { MdSunny } from 'react-icons/md';
 
-const DarkModeIcon = () => {
+const DarkModeIcon = ({ darkSide, toggleDarkMode }) => {
   return (
     <MdSunny
-      color="#e55527"
       size={40}
-      className="hidden p-1 rounded-lg cursor-pointer lg:block bg-lighter hover:bg-darker"
+      className="hidden p-1 transition duration-500 rounded-lg cursor-pointer lg:block bg-lighter hover:text-white hover:bg-primary text-primary"
+      onClick={toggleDarkMode}
     />
   );
 };
