@@ -1,13 +1,8 @@
 import { useState, useEffect } from 'react';
 
 export default function useDarkSide() {
-  const [theme, setTheme] = useState(localStorage.theme);
+  const [theme, setTheme] = useState('light');
   const colorTheme = theme === 'dark' ? 'light' : 'dark';
-
-  useEffect(() => {
-    // Perform localStorage action
-    const item = localStorage.getItem('key');
-  }, []);
 
   useEffect(() => {
     const root = window.document.documentElement;
